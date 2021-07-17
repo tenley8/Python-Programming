@@ -1,0 +1,26 @@
+Create a new README.txt file within the same folder as your AlphabetSoupChallenge.ipynb notebook. Include a 5–10 sentence writeup in your README that addresses the following questions:
+- How many neurons and layers did you select for your neural network model? Why?
+Input layer: I included the number of input features which was the same as the number of varaibles in datafreme
+Hiden layer: I included two hidden layers with few neurons in each of the two layers
+Sigmoid Activation function helped predicted an applicant's sucesss of being funded by Alphabet soup
+
+- Were you able to achieve the target model performance? What steps did you take to try and increase model performance?
+The deep learning model produced a reliable classifier. 
+I doubled the epochs from 100 to 200. When compared to the previous deep learning model, this model produced a less reliable classifier. 
+
+epochs = 100
+268/268 - 0s - loss: 0.5574 - accuracy: 0.7268
+Loss: 0.5574015974998474, Accuracy: 0.7267638444900513
+
+epochs = 200
+268/268 - 0s - loss: 0.5573 - accuracy: 0.7243
+Loss: 0.5572721362113953, Accuracy: 0.7243148684501648
+
+If you were to implement a different model to solve this classification problem, which would you choose? Why?
+If I had to implement a different model I would implement a Random Forest Classifier
+- Random forest models will only handle tabular data, so data such as images or natural language data cannot be used in a random forest without heavy 
+modifications to the data. Neural networks can handle all sorts of data types and structures in raw format or with general transformations (such as converting categorical data).
+- Random forest models are dependent on each weak learner being trained on a subset of the input data. Once each weak learner is trained, 
+the random forest model predicts the classification based on a consensus of the weak learners
+
+
